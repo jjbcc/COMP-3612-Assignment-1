@@ -1,6 +1,10 @@
 
 /*Google fonts for some fonts
 https://fonts.google.com
+
+
+
+Used this website to check my css!!! https://jigsaw.w3.org/css-validator/
 **/
 
 * {
@@ -25,8 +29,8 @@ ul {
 
 header{
 
-    background-color:#171b26 ;
-    color: #f3f4f7;
+    background-color:black ;
+    color: white;
     display: flex;
     justify-content: space-between ;
     align-items: center;
