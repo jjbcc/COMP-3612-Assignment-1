@@ -1,3 +1,6 @@
+
+/*Google fonts for some fonts**/
+
 * {
     box-sizing: border-box;
 }
@@ -8,8 +11,7 @@ a{
 }
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f3f4f7;
+    font-family: "Inter", Arial, sans-serif;
 }
 
 ul {
@@ -17,6 +19,7 @@ ul {
     padding: 0;
     margin: 0; 
 }
+/*--------header----------------*/
 
 header{
 
@@ -25,7 +28,7 @@ header{
     display: flex;
     justify-content: space-between ;
     align-items: center;
-    padding: 10px;
+    padding: 15px;
     
 }
 
@@ -34,14 +37,225 @@ header ul{
     gap: 15px;
     font-size: 15px;
 }
-header ul:hover{
-    
+header ul a {
+    display: inline-block;
+    padding: 8px 12px;
+    border-radius: 4px;
 }
 
+header ul a:hover {
+    color: #d6a419;
+    background-color: #34495e;
+
+}
+
+header ul a.current {
+    background-color: #34495e;
+}
 .logo{
     font-size: 30px;
     font-family: monospace;
 }
 .logo-slash{
     color:#d6a419;
+}
+
+/*--------header----------------*/
+
+/*--------hero--------------*/
+
+.hero{
+        position: relative; /*need these two or the braces will block the home card button*/
+    overflow: hidden;
+    background-color:#272d3f ;
+    padding:50px;
+    padding-left: 300px;
+
+}
+
+.hero .brace {
+    font-family: "Source Serif 4", Georgia, serif;
+    position: absolute;
+    top: -50px;
+    font-size: 400px;
+    line-height: 1;
+    color: #303647;
+}
+
+.brace-left {
+    right: 350px;
+}
+
+.brace-right {
+    right: -20px;
+}
+
+
+.hero h1 {
+    color: white;
+    font-family: "Source Serif 4", Georgia;
+    font-size: 50px;
+    max-width: 400px;
+}
+
+
+.hero p {
+    color: #a9aec0;
+    max-width: 500px;
+}
+.hero .btn{
+    background-color: #d6a419;
+    color:black;
+    padding: 20px;
+    margin-top:30px;
+    border-radius: 4px;
+    display: inline-block; /*needed addition resources for this, padding was not working */
+    font-weight:bold;
+}
+/*--------------hero----------*/
+
+
+
+.featured-products {
+    background-color: #f3f4f7;
+    padding: 30px;
+}
+.featured-products h2{
+    font-family: "Source Serif 4", Georgia;
+    font-size: 28px;
+    font-weight:bold;
+    padding-bottom: 30px;
+    padding-top: 10px;
+
+}
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;  /*https://www.w3schools.com/cssref/pr_grid-template-columns.php*/
+    gap: 20px;
+    max-width: 1100px;
+}
+
+
+/*cards*/
+
+.card {
+    background-color: #ffffff;
+
+    border: 1px solid #dcdfe6;
+    padding: 20px;
+    border-top: 3px solid #2f6f63;
+    border-radius: 4px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column; /* https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/flex-direction*/
+}                           /*needed to make the cards longer*/
+
+.card:hover{
+    border: 1px solid black;
+    border-top: 3px solid #d6a419;
+
+}
+.card img {
+    background-color:#f3f4f7;
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+
+.card .price {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 14px;
+    color: #5b6270;
+    
+}
+
+.card .btn{
+    color:black;
+    padding: 10px;
+    border: 1px solid black;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    background-color: #ffffff;
+    border-radius: 2px;
+    padding: 10px;
+    margin-top: 15px;
+
+}
+
+.card .btn:hover{
+    background-color: black;
+    color:white;
+}
+
+/*cards*/
+
+/*why choose*/
+.why-choose{
+    background-color: white;
+    padding: 30px;
+
+}
+
+.why-choose h2{
+    font-family: "Source Serif 4", Georgia, serif;
+    font-size: 28px;
+    color: black;
+}
+
+.why-choose p{
+    color: #5b6270;
+    max-width: 700px;
+    
+}
+
+/*footer*/
+
+
+footer{
+
+    background-color: #171b26;
+    padding-left:30px;
+    padding-top: 50px;
+    padding-bottom: 10px;
+
+}
+
+footer .grid-container{
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr;
+    gap: 10px;
+
+}
+
+footer .grid-box{
+    padding-bottom: 30px;
+}
+
+footer h2{
+    color: white;
+    font-family: "Inter", Arial, sans-serif;
+    font-weight:bold;
+    font-size:15px;
+    padding-bottom: 10px;
+
+}
+footer ul{
+    color: #a9aec0;
+}
+
+footer .grid-box li{
+    padding-bottom: 20px;
+}
+
+footer hr{
+    border: 1px solid #2a3040;
+}
+
+footer p{
+    color:rgb(112, 112, 112);
+    font-size:12px;
 }
