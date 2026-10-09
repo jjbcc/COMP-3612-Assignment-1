@@ -111,7 +111,8 @@ header ul a.current {
     padding: 20px;
     margin-top:30px;
     border-radius: 4px;
-    display: inline-block; /*needed addition resources for this, padding was not working */
+    display: inline-block; /*needed addition resources for this, padding was not working 
+                            https://www.w3schools.com/css/css_inline-block.asp*/
     font-weight:bold;
 }
 /*--------------hero----------*/
@@ -130,15 +131,15 @@ header ul a.current {
     padding-top: 10px;
 
 }
+/*cards*/
+
 .cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;  /*https://www.w3schools.com/cssref/pr_grid-template-columns.php*/
-    gap: 20px;
+    gap: 20px; 
     max-width: 1100px;
+    
 }
-
-
-/*cards*/
 
 .card {
     background-color: #ffffff;
@@ -175,7 +176,6 @@ header ul a.current {
 
 .card .btn{
     color:black;
-    padding: 10px;
     border: 1px solid black;
     display: block;
     text-align: center;
@@ -296,9 +296,10 @@ footer p{
 .our-story {
     background-color: #f3f4f7;
     padding-top: 40px;
-    padding-right: 30px;
     padding-bottom: 40px;
     padding-left: 100px;
+    padding-right: 100px;
+
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
@@ -323,9 +324,10 @@ footer p{
 .values {
     background-color: #ffffff;
     padding-top: 40px;
-    padding-right: 30px;
     padding-bottom: 40px;
     padding-left: 100px;
+    padding-right: 100px;
+
 
 }
 .values h2 {
@@ -384,6 +386,8 @@ footer p{
 .our-team {
     background-color: #f3f4f7;
     padding-left:100px;
+        padding-right: 100px;
+
     padding-top: 30px;
     padding-bottom: 30px;
 
@@ -404,7 +408,7 @@ footer p{
 }
 .team-member img {
     display: block;
-    max-width: 360px;
+    max-width: 340px;
     aspect-ratio: 1; /*https://www.w3schools.com/css/css3_object-fit.asp*/
     object-fit: cover;
     border: 1px solid #dcdfe6;
@@ -641,6 +645,10 @@ footer p{
 
 /*color circles:
     quite challenging. Needed external help for this.
+    Claude AI helped with the hidden radio and styled label technique.
+    this block was generated from my prompt:
+   "plz help styling hidden radio buttons and their labels as size buttons and color circles.", then I fit this into this asg
+    Further more used this reference for additional help.
     https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:checked
     
 */
@@ -697,7 +705,6 @@ footer p{
     background-color: #f3f4f7;
     border-top: 1px solid #dcdfe6;
     border-bottom: 1px solid #dcdfe6;
-
     font-size: 14px;
     color: #5b6270;
 }
